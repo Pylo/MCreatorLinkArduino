@@ -1,0 +1,7 @@
+MinecraftLink   KEYWORD1
+
+setup   KEYWORD2
+loop    KEYWORD2
+sendMessage KEYWORD2
+setListener KEYWORD2
+setRefreshRate  KEYWORD2
