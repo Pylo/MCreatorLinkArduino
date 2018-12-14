@@ -2,7 +2,7 @@
 
 This repository contains the implementation of the Minecraft Link for the Arduino compatible devices.
 
-Main repository: LINK
+Main repository: https://github.com/Pylo/MinecraftLink
 
 ## Setup and getting started
 
