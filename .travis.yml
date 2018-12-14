@@ -13,4 +13,4 @@ script:
   - arduino --verify --board arduino:avr:uno $PWD/examples/BareMinimum/BareMinimum.ino
   - arduino --verify --board arduino:avr:uno $PWD/examples/BareMinimum2/BareMinimum2.ino
   - arduino --verify --board arduino:avr:uno $PWD/examples/CustomMessages/CustomMessages.ino
-  - arduino --verify --board arduino:avr:uno $PWD/examples/CustomSerialPort/CustomSerialPort.ino
+  - arduino --verify --board arduino:avr:mega2560 $PWD/examples/CustomSerialPort/CustomSerialPort.ino
