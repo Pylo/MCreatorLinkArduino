@@ -1,4 +1,4 @@
-# Minecraft Link: Arduino [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Build Status](https://travis-ci.com/Pylo/MinecraftLinkArduino.svg?branch=master)](https://travis-ci.com/Pylo/MinecraftLinkArduino)
+# Minecraft Link: Arduino [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/Pylo/MinecraftLink/blob/master/LICENSE) [![Build Status](https://travis-ci.com/Pylo/MinecraftLinkArduino.svg?branch=master)](https://travis-ci.com/Pylo/MinecraftLinkArduino)
 
 This repository contains the implementation of the Minecraft Link for the Arduino compatible devices.
 
