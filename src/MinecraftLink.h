@@ -77,6 +77,6 @@ class MinecraftLinkImpl
     void setRefreshRate(int rate);
 };
 
-const MinecraftLinkImpl MinecraftLink;
+static MinecraftLinkImpl MinecraftLink;
 
 #endif
