@@ -9,3 +9,7 @@ Main repository: https://github.com/Pylo/MinecraftLink
 ## Setup and getting started
 
 Setup instructions can be found on the Minecraft Link official website: https://mcreator.net/link
+
+You can install Minecraft Link using Arduino library manager (Tools -> Manage Libraries...) too:
+
+![Minecraft Link in Arduino Library Manager](https://www.pylo.co/static/mcreator/link/arduinolink.png)
