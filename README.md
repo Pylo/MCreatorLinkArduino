@@ -12,4 +12,4 @@ Setup instructions can be found on the Minecraft Link official website: https://
 
 You can install Minecraft Link using Arduino library manager (Tools -> Manage Libraries...) too:
 
-![Minecraft Link in Arduino Library Manager](https://www.pylo.co/static/mcreator/link/arduinolink.png)
+![Minecraft Link in Arduino Library Manager](https://www.pylo.co/static/mcreator/link/arduinolinkinstall.png)
