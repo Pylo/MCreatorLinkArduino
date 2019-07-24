@@ -45,7 +45,7 @@ void MinecraftLinkImpl::loop() {
     String command = serial->readStringUntil('?');
     String data = serial->readStringUntil('\n');
     if(command.equals("ident")) {
-      serial->print("tnedi:Minecraft Link (1.0);" + deviceName + ";" + String(NUM_DIGITAL_PINS) + ";" + String(NUM_ANALOG_INPUTS) + "\n");
+      serial->print("tnedi:Minecraft Link (1.1);" + deviceName + ";" + String(NUM_DIGITAL_PINS) + ";" + String(NUM_ANALOG_INPUTS) + "\n");
     } else if(command.equals("pstrt")) {
       pollInputs = true;
     } else if(command.equals("pstop")) {
