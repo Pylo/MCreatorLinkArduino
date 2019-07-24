@@ -14,8 +14,6 @@ script:
   - arduino --verify --board arduino:avr:uno $PWD/examples/BareMinimum2/BareMinimum2.ino
   - arduino --verify --board arduino:avr:uno $PWD/examples/CustomMessages/CustomMessages.ino
   - arduino --verify --board arduino:avr:leonardo $PWD/examples/BareMinimum/BareMinimum.ino
-  - arduino --verify --board arduino:sam:arduino_due_x $PWD/examples/BareMinimum/BareMinimum.ino
   - arduino --verify --board arduino:avr:leonardo $PWD/examples/BareMinimum2/BareMinimum2.ino
-  - arduino --verify --board arduino:sam:arduino_due_x $PWD/examples/BareMinimum2/BareMinimum2.ino
   - arduino --verify --board arduino:avr:uno $PWD/examples/CustomMessages/CustomMessages.ino
   - arduino --verify --board arduino:avr:mega:cpu=atmega2560 $PWD/examples/CustomSerialPort/CustomSerialPort.ino
