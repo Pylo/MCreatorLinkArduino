@@ -10,6 +10,8 @@ void dataEvent(String command, String data) {
 }
 
 void setup() {
+    Serial.begin(115200);
+    Serial.setTimeout(20);
     MinecraftLink.setup(Serial, "Device Name");
     MinecraftLink.setListener(dataEvent);
 }

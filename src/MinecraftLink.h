@@ -20,19 +20,10 @@
 #include "Arduino.h"
 #include "BoardNames.h"
 
-// Workaround for SerialUSB
-#if defined(__AVR_ATmega32U4__) || defined(__MK20DX128__) || defined(__MK20DX256__)
-	#define ALTSERIAL
-#endif
-
 class MinecraftLinkImpl
 {
   private:
-	#ifndef ALTSERIAL
-    HardwareSerial* serial;
-	#else
-	Serial_* serial;
-	#endif
+    Stream* serial;
     bool setupComplete = false;
     int inputReadRefreshRate = 20;
     bool pollInputs = false;
@@ -50,11 +41,7 @@ class MinecraftLinkImpl
     Setup function that needs to be called in order for Minecraft Link to work.
     Serial communication is initialized at this point for the selected HardwareSerial interface.
     */
-	#ifndef ALTSERIAL
-    void setup(HardwareSerial &serial_ref = SERIAL_PORT_MONITOR, String deviceName = BOARD);
-	#else
-	void setup(Serial_ &serial_ref = SERIAL_PORT_MONITOR, String deviceName = BOARD);
-	#endif
+    void setup(Stream &serial_ref = SERIAL_PORT_MONITOR, String deviceName = BOARD);
 	
     /*
     Actual Link logic happens here. This function needs to be called each Arduino loop iteration.

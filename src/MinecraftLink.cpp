@@ -19,18 +19,9 @@
 MinecraftLinkImpl::MinecraftLinkImpl() {
 }
 
-#ifndef ALTSERIAL
-void MinecraftLinkImpl::setup(HardwareSerial &serial_ref, String _deviceName) {
-#else
-void MinecraftLinkImpl::setup(Serial_ &serial_ref, String _deviceName) {
-#endif
+void MinecraftLinkImpl::setup(Stream &serial_ref, String _deviceName) {
   if(!setupComplete) {
     serial = &serial_ref;
-	#ifdef ALTSERIAL
-	while (!serial_ref);
-	#endif
-    serial->begin(115200);
-    serial->setTimeout(20);
     deviceName = _deviceName;
     setupComplete = true;
   }
