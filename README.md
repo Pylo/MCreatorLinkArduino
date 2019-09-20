@@ -13,3 +13,7 @@ Setup instructions can be found on the MCreator Link official website: https://m
 You can install MCreator Link using Arduino library manager (Tools -> Manage Libraries...) too:
 
 ![MCreator Link in Arduino Library Manager](https://www.pylo.co/static/mcreator/link/arduinolinkinstall.png)
+
+## Notice
+
+NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG.
