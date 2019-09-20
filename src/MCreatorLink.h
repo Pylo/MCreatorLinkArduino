@@ -38,7 +38,7 @@ class MCreatorLinkImpl
     MCreatorLinkImpl();
 
     /*
-    Setup function that needs to be called in order for Minecraft Link to work.
+    Setup function that needs to be called in order for MCreator Link to work.
     Serial communication is initialized at this point for the selected HardwareSerial interface.
     */
     void setup(Stream &serial_ref = SERIAL_PORT_MONITOR, String deviceName = BOARD);
