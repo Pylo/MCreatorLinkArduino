@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-#ifndef MinecraftLink_h
-#define MinecraftLink_h
+#ifndef MCreatorLink_h
+#define MCreatorLink_h
 
 #include "Arduino.h"
 #include "BoardNames.h"
 
-class MinecraftLinkImpl
+class MCreatorLinkImpl
 {
   private:
     Stream* serial;
@@ -33,9 +33,9 @@ class MinecraftLinkImpl
   public:
 
     /*
-    Constructor for the MinecraftLinkImpl object, does nothing at the moment
+    Constructor for the MCreatorLinkImpl object, does nothing at the moment
     */
-    MinecraftLinkImpl();
+    MCreatorLinkImpl();
 
     /*
     Setup function that needs to be called in order for Minecraft Link to work.
@@ -64,6 +64,6 @@ class MinecraftLinkImpl
     void setRefreshRate(int rate);
 };
 
-static MinecraftLinkImpl MinecraftLink;
+static MCreatorLinkImpl MCreatorLink;
 
 #endif

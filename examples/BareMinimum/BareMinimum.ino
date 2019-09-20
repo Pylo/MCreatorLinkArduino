@@ -1,11 +1,11 @@
-#include "MinecraftLink.h"
+#include "MCreatorLink.h"
 
 void setup() {
     Serial.begin(115200);
     Serial.setTimeout(20);
-    MinecraftLink.setup(Serial);
+    MCreatorLink.setup(Serial);
 }
 
 void loop() {
-    MinecraftLink.loop();
+    MCreatorLink.loop();
 }

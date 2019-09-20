@@ -1,4 +1,4 @@
-#include "MinecraftLink.h"
+#include "MCreatorLink.h"
 
 void dataEvent(String command, String data) {
   // if you send a message from the Link API inside Minecraft with this format command?data
@@ -12,10 +12,10 @@ void dataEvent(String command, String data) {
 void setup() {
     Serial.begin(115200);
     Serial.setTimeout(20);
-    MinecraftLink.setup(Serial, "Device Name");
-    MinecraftLink.setListener(dataEvent);
+    MCreatorLink.setup(Serial, "Device Name");
+    MCreatorLink.setListener(dataEvent);
 }
 
 void loop() {
-    MinecraftLink.loop();
+    MCreatorLink.loop();
 }

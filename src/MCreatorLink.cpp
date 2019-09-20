@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-#include "MinecraftLink.h"
+#include "MCreatorLink.h"
 
-MinecraftLinkImpl::MinecraftLinkImpl() {
+MCreatorLinkImpl::MCreatorLinkImpl() {
 }
 
-void MinecraftLinkImpl::setup(Stream &serial_ref, String _deviceName) {
+void MCreatorLinkImpl::setup(Stream &serial_ref, String _deviceName) {
   if(!setupComplete) {
     serial = &serial_ref;
     deviceName = _deviceName;
@@ -27,25 +27,25 @@ void MinecraftLinkImpl::setup(Stream &serial_ref, String _deviceName) {
   }
 }
 
-void MinecraftLinkImpl::setListener(void (*event_ptr)(String command, String data)) {
+void MCreatorLinkImpl::setListener(void (*event_ptr)(String command, String data)) {
   event = event_ptr;
 }
 
-void MinecraftLinkImpl::setRefreshRate(int rate) {
+void MCreatorLinkImpl::setRefreshRate(int rate) {
   inputReadRefreshRate = rate;
 }
 
-void MinecraftLinkImpl::sendMessage(String message) {
+void MCreatorLinkImpl::sendMessage(String message) {
   serial->print("msg:" + message + "\n");
 }
 
-void MinecraftLinkImpl::loop() {
+void MCreatorLinkImpl::loop() {
   // 1: read, parse and react to commands
   if(serial->available()>0) {
     String command = serial->readStringUntil('?');
     String data = serial->readStringUntil('\n');
     if(command.equals("ident")) {
-      serial->print("tnedi:Minecraft Link (1.1);" + deviceName + ";" + String(NUM_DIGITAL_PINS) + ";" + String(NUM_ANALOG_INPUTS) + "\n");
+      serial->print("tnedi:MCreator Link (1.1);" + deviceName + ";" + String(NUM_DIGITAL_PINS) + ";" + String(NUM_ANALOG_INPUTS) + "\n");
     } else if(command.equals("pstrt")) {
       pollInputs = true;
     } else if(command.equals("pstop")) {

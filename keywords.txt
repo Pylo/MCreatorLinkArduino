@@ -1,4 +1,4 @@
-MinecraftLink	KEYWORD1
+MCreatorLink	KEYWORD1
 
 setup	KEYWORD2
 loop	KEYWORD2
