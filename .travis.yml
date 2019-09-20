@@ -8,7 +8,7 @@ before_install:
   - sudo mv arduino-1.8.8 /usr/local/share/arduino
   - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
 install:
-  - ln -s $PWD /usr/local/share/arduino/libraries/Minecraft_Link
+  - ln -s $PWD /usr/local/share/arduino/libraries/MCreator_Link
 script:
   - arduino --verify --board arduino:avr:uno $PWD/examples/BareMinimum/BareMinimum.ino
   - arduino --verify --board arduino:avr:uno $PWD/examples/BareMinimum2/BareMinimum2.ino
