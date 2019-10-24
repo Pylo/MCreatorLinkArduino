@@ -6,6 +6,8 @@ This repository contains the implementation of the MCreator Link for the Arduino
 
 Main repository: https://github.com/Pylo/MCreatorLink
 
+![MCreator Link](https://www.pylo.co/static/mcreator/link/demolight.gif?)
+
 ## Setup and getting started
 
 Setup instructions can be found on the MCreator Link official website: https://mcreator.net/link
