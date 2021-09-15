@@ -27,7 +27,7 @@ void MCreatorLinkImpl::setup(Stream &serial_ref, String _deviceName) {
   }
 }
 
-void MCreatorLinkImpl::setListener(void (*event_ptr)(String command)) {
+void MCreatorLinkImpl::setListener(void (*event_ptr)(String command, String data)) {
   event = event_ptr;
 }
 
@@ -79,7 +79,10 @@ void MCreatorLinkImpl::loop() {
         analogWrite(pin, val);
       }
     } else if (command.equals("msg")) {
-      event(command);
+    	String tempComm = data.substring(0, data.indexOf(":"));
+    	String tempData = data.substring(data.indexOf(":") + 1, data.length());
+    	event(tempComm, tempData);
+      	
     }
   }
   

@@ -28,7 +28,7 @@ class MCreatorLinkImpl
     int inputReadRefreshRate = 20;
     bool pollInputs = false;
     unsigned long lastInputPollMillis = 0;
-    void (*event)(String command);
+    void (*event)(String command, String data);
     String deviceName;
   public:
 
@@ -56,7 +56,7 @@ class MCreatorLinkImpl
     /*
     Here the listener function for the inbound messages can be set. See examples for more info.
     */
-    void setListener(void (*event)(String command));
+    void setListener(void (*event)(String command, String data));
 
     /*
     Function to set the refresh rate of the input checking.
