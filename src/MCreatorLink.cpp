@@ -79,7 +79,14 @@ void MCreatorLinkImpl::loop() {
         analogWrite(pin, val);
       }
     } else if (command.equals("msg")) {
-      event(command, data);
+    	if(data.indexOf(":") == -1){
+    		event(data, "");
+    	}else{
+    		String tempComm = data.substring(0, data.indexOf(":"));
+    		String tempData = data.substring(data.indexOf(":") + 1, data.length());
+    		event(tempComm, tempData);
+    	}
+      	
     }
   }
   
